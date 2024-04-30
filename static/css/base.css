@@ -12,21 +12,21 @@ body {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: rgb(166, 5, 93);
+    background-color: #a6055d;
 }
 
 /* Color Palette  */
 
 .color1 {
-    color: rgb(166, 5, 93);
+    color: #a6055d;
 }
 
 .color2 {
-    color: rgb(242, 99, 204);
+    color: #f263cc;
 }
 
 .color3 {
-    color: rgb(242, 167, 222);
+    color: #f2a7de;
 }
 
 .color4 {

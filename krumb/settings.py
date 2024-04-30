@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['krumb-96963189792b.herokuapp.com', '8000-jonnydavison-krumb-mnm5adbrqnd.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = ['www.krumbbakery.com', 'krumb-96963189792b.herokuapp.com', '8000-jonnydavison-krumb-mnm5adbrqnd.ws-eu110.gitpod.io']
 
 
 # Application definition
