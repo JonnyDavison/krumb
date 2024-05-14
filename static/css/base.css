@@ -18,53 +18,58 @@ body {
 /* Color Palette  */
 
 .color1 {
-    color: #a6055d;
+    color: #a6055d !important;
 }
 
 .color2 {
-    color: #f263cc;
+    color: #f263cc !important;
 }
 
 .color3 {
-    color: #f2a7de;
+    color: #f2a7de !important;
 }
 
 .color4 {
-    color: rgb(242, 48, 210);
+    color: #f230d2 !important;
 }
 
 .color5 {
-    color: rgb(13, 13, 13);
+    color: #0d0d0d !important;
 }
 
 .color6 {
-    color: rgb(234, 234, 234);
+    color: #eaeaea !important;
 }
 
 .bg1 {
-    background-color: rgb(166, 5, 93);
+    background-color: rgb(166, 5, 93) !important;
 }
 
 .bg2 {
-    background-color: rgb(242, 99, 204);
+    background-color: rgb(242, 99, 204) !important;
 }
 
 .bg3 {
-    background-color: rgb(242, 167, 222);
+    background-color: rgb(242, 167, 222) !important;
 }
 
 .bg4 {
-    background-color: rgb(242, 48, 210);
+    background-color: rgb(242, 48, 210) !important;
 }
 
 .bg5 {
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(13, 13, 13) !important;
 }
 
 .bg6 {
-    background-color: rgb(234, 234, 234);
+    background-color: rgb(234, 234, 234) !important;
 }
 
+/* Nav Bar  */
+
+.navbrand{
+    font-weight: 800;
+}
 
 /* Brand Logo */
 
@@ -87,8 +92,9 @@ body {
 }
 
 .hero {
-    z-index: 1000000;
+    z-index: 10;
 }
+
 
 .glass {
     background: rgba(166,5,93,0.55);

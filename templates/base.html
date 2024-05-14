@@ -37,40 +37,39 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
     </script>
   
-    <script src="https://kit.fontawesome.com/75b57bf907.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/75b57bf907.js" crossorigin="anonymous"></script>
     <title>Document</title>
 
 </head>
 <body>
-  <!-- Nav bar set to  DISPLAY NONE  -->
-  <nav class="navbar d-none navbar-expand-lg bg-body-tertiary w-100">
+  <nav class="navbar navbar-expand-lg w-100 bg1">
     <div class="container-fluid">
-      <a class="navbar-brand color3" href="#">Krumb</a>
+      <a class="navbar-brand navbrand color4" href="#">Krumb</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Find us</a>
+            <a class="nav-link color6" aria-current="page" href="#">Find us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link color6" href="#">About</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle color6" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Bakes
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Gallery</a></li>
-              <li><a class="dropdown-item" href="#">Order</a></li>
-              <li><a class="dropdown-item" href="#">Wholesale</a></li>
+            <ul class="dropdown-menu bg6">
+              <li><a class="dropdown-item color4" href="#">Gallery</a></li>
+              <li><a class="dropdown-item color4" href="{% url 'products' %}">Order</a></li>
+              <li><a class="dropdown-item color4" href="#">Wholesale</a></li>
             </ul>
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2 color4 bg3" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn color6" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
       </div>
     </div>
