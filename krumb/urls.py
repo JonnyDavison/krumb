@@ -5,5 +5,8 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
+    path('accounts/', include('allauth.urls')),
+    
     path('', include('index.urls')),
+    path('products/', include('products.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
