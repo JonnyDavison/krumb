@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['www.krumbbakery.com', 'krumb-96963189792b.herokuapp.com', '8000-jonnydavison-krumb-mnm5adbrqnd.ws-eu111.gitpod.io']
-
+CSRF_TRUSTED_ORIGINS = ['https://www.krumbbakery.com', 'https://krumb-96963189792b.herokuapp.com', 'https://8000-jonnydavison-krumb-mnm5adbrqnd.ws-eu111.gitpod.io']
 
 # Application definition
 
