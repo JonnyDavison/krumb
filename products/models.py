@@ -3,9 +3,12 @@ from django.db import models
 # Create your models here.
 
 LABEL_CHOICES = (
-    ('P', 'primary'),
-    ('S', 'secondary'),
-    ('D', 'danger')
+    ('bg-1', '1'),
+    ('bg-2', '2'),
+    ('bg-3', '3'),
+    ('bg-4', '4'),
+    ('bg-5', '5'),
+    ('bg-6', '6')
 )
 
 TAG_CHOICES = (
@@ -41,7 +44,7 @@ class Product(models.Model):
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     offer_price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
-    label = models.CharField(choices=LABEL_CHOICES, max_length=1, null=True, blank=True)
+    label = models.CharField(choices=LABEL_CHOICES, max_length=4, null=True, blank=True)
     tag = models.CharField(choices=TAG_CHOICES, max_length=1, null=True, blank=True)
     slug = models.SlugField(max_length=254, null=True, blank=True)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)

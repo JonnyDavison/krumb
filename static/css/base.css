@@ -42,7 +42,7 @@ body {
 }
 
 .bg1 {
-    background-color: rgb(166, 5, 93) !important;
+    background-color: #a6055d !important;
 }
 
 .bg2 {
@@ -67,8 +67,24 @@ body {
 
 /* Nav Bar  */
 
-.navbrand{
+.navbrand {
     font-weight: 800;
+}
+
+.dropdown-glass {
+    background: rgba(242, 48, 210, 0.45);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(242, 48, 210, 0.225);
+}
+
+.dropdown-item:hover {
+    --bs-dropdown-link-hover-bg: none;
+}
+
+.dropdown-item {
+    --bs-dropdown-link-active-color: none;
+    --bs-dropdown-link-active-bg: none;
 }
 
 /* Brand Logo */
@@ -81,6 +97,11 @@ body {
 .tagline {
     font-size: 1.75rem;
     font-weight: 200;
+}
+
+.nav-logo {
+    height: 100px;
+    width: 100px;
 }
 
 /* Index */
@@ -97,10 +118,31 @@ body {
 
 
 .glass {
-    background: rgba(166,5,93,0.55);
+    background: rgba(166, 5, 93, 0.55);
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
-    border: 1px solid rgba(166,5,93,0.275);
+    border: 1px solid rgba(166, 5, 93, 0.275);
+}
+
+
+/* PRODUCTS  */
+
+/* CARDS */
+
+.krumb-card {
+    background: rgba(234, 234, 234, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(234, 234, 234, 0.25);
+}
+
+.rating {
+    font-size: medium;
+    color: #0d0d0d;
+}
+
+.rating>p>i {
+    color: #f263cc;
 }
 
 /* MEDIA QUERIES */
