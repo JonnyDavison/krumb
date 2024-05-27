@@ -13,7 +13,7 @@
       content="" />
     {% block meta %}
     {% endblock %}
-    <title>Krumb Bakery | </title>
+    <title>Krumb Bakery | Belfast Bakes</title>
   
     <!-- core css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -44,27 +44,29 @@
 <body>
   <nav class="navbar navbar-expand-lg w-100 bg1">
     <div class="container-fluid">
-      <a class="navbar-brand navbrand color4" href="#">Krumb</a>
+      <a class="navbar-brand navbrand color4" href="{% url 'index' %}"><img class="nav-logo" src="{{ MEDIA_URL }}klogo.svg" alt="Krumb Logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link color6" aria-current="page" href="#">Find us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link color6" href="#">About</a>
+          <!-- display none set  -->
+          <li class="nav-item d-none">
+            <a class="nav-link color6" href="{% url 'about' %}">About</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle color6" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Bakes
             </a>
-            <ul class="dropdown-menu bg6">
-              <li><a class="dropdown-item color4" href="#">Gallery</a></li>
-              <li><a class="dropdown-item color4" href="{% url 'products' %}">Order</a></li>
-              <li><a class="dropdown-item color4" href="#">Wholesale</a></li>
+            <ul class="dropdown-menu dropdown-glass">
+              <li><a class="dropdown-item color6" href="#">Gallery</a></li>
+              <li><a class="dropdown-item color6" href="{% url 'products' %}">Order</a></li>
+              <li><a class="dropdown-item color6" href="#">Wholesale</a></li>
             </ul>
+          </li>
+          <!-- display none set  -->
+          <li class="nav-item d-none">
+            <a class="nav-link color6" aria-current="page" href="{% url 'findus' %}">Find us <i class="fa-solid ms-1 fa-magnifying-glass"></i></a>
           </li>
         </ul>
         <form class="d-flex" role="search">
