@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category
+from .models import Product, Category, Gallery
 
 # Register your models here.
 
@@ -23,6 +23,14 @@ class CategoryAdmin(admin.ModelAdmin):
         'friendly_name',
         'name',
     )
+    
+
+class GalleryAdmin(admin.ModelAdmin):
+    """ Organise the Gallery admin panel """
+    list_display = (
+        'name',
+    )
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
+admin.site.register(Gallery, GalleryAdmin)

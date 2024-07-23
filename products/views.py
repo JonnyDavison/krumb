@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
+from .models import Product, Category, Gallery
 
 
 
@@ -12,7 +12,7 @@ def all_products(request):
     """
     A view to return all Products page
     """
-
+    gallery = Gallery.objects.all()
     products = Product.objects.all()
     query = None
     categories = None
@@ -34,6 +34,7 @@ def all_products(request):
 
 
     context = {
+        'gallery': gallery,
         'products': products,
         'search_term': query,
         'current_categories': categories

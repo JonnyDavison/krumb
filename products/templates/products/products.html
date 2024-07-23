@@ -4,17 +4,36 @@
 
 {% block content %}
 <div class="w-100 ">
-    <div class="row">
-        <div class="col-12">
+    <div class="row m-0 p-0">
+        <div class="col-8 offset-2 color6 text-sm-center">
             <div class="">
-                <h1 class=" text-center color6">All Bakes</h1>
-                <h3 class=" text-center color6">Online Orders are coming soon!</h3>
+                <h1 class=" text-sm-center display-4 color6">Online Orders are coming soon!</h1>
+                <h3 class=" text-center color6">To place an order via Email <a class="color6"
+                        href="mailto:someone@example.com">Click Here</a></h3>
             </div>
         </div>
     </div>
 </div>
+<div class="row m-0 p-0">
+    <div class="col-8 offset-2 color6 text-sm-center">
+        <h5 class="display-6 pt-4 pb-4">Product Gallery</h5>
+    </div>
 
-<div class="row">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        {% for gal in gallery %}
+        <div class="col pb-5">
+            <div class="card bg6">
+                <img src="{{ MEDIA_URL }}{{ gal.image }}" class="card-img-top" alt="{{ gal.name }}">
+                <div class="card-body">
+                    <p class="card-text color1 text-center fs-6">{{ gal.name }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- <div class="row d-none">
     <div class="col-10 offset-1 product-container">
         <div class="row mt-1 mb-2"></div>
         <div class="row mb-5">
@@ -68,9 +87,9 @@
 
 </div>
 </div>
-</div>
+</div> -->
 
-<div class="row">
+<!-- <div class="row">
     <div class="col ">
         <div class="btn top-button">
             <a class="btt-link d-flex h-100">
@@ -78,14 +97,14 @@
             </a>	
         </div>
     </div>
-</div>
+</div> -->
 {% endblock %}
 
-{% block postloadjs %}
+<!-- {% block postloadjs %}
 {{ block.super }}
 <script type="text/javascript">
     $('.btt-link').click(function(e) {
         window.scrollTo(0,0)
     })
 </script>
-{% endblock %}
+{% endblock %} -->
