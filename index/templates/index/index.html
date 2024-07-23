@@ -5,27 +5,28 @@
 {% block content %}
 <div class="w-100 ">
   <div class="row m-0 p-0">
-    <div class="col-8 offset-2 color6 text-sm-center">
+    <div class="col-8 offset-2 color1">
       <div class="text-center">
         <h6>Our site is still under construction. Keep up to date or get in touch
-          <a href="https://www.facebook.com/profile.php?id=61560686905034" target="_blank" class="color6 nav-link pl-0"
-            rel="nofollow color6 noopener">Facebook <i class="fa fa-facebook fa-lg color6"></i></a>
+          <br>
+          <a href="https://www.facebook.com/profile.php?id=61560686905034" target="_blank" class="color1 pl-0"
+            rel="nofollow color1 noopener">Facebook <i class="fa fa-facebook fa-lg color1"></i></a>
 
 
-          <a href="https://www.instagram.com/krumb_bakery" target="_blank" class="color6 nav-link"
-            rel="nofollow noopener">Instagram <i class="fa fa-instagram fa-lg color6"></i></a>
+          <a href="https://www.instagram.com/krumb_bakery" target="_blank" class="color1"
+            rel="nofollow noopener">Instagram <i class="fa fa-instagram fa-lg color1"></i></a>
 
-          <a class="color6" href="mailto:hello@krumbbakery.com">Email <i
-              class="fa-regular fa-envelope fa-lg color6 ps-3"></i></a>
+          <a class="color1" href="mailto:hello@krumbbakery.com">Email <i
+              class="fa-regular fa-envelope fa-lg color1 ps-3"></i></a>
         </h6>
       </div>
       <br>
       <br>
-      <h4 class="text-sm-center display-4 color6">Cakes, Bakes & Buns</h4>
+      <h4 class="text-left display-4 color1">Cakes, Bakes & Buns</h4>
       <p>To view some of our products head to the gallery <a class="color2" href="{% url 'products' %}">here</a></p>
       <br>
       <p>
-        At Krumb, we are an artisan bakery, we focus on handmade, delicious fresh bakes. Our Cakes, Bakes & Buns
+        At Krumb, we focus on handmade, delicious fresh bakes. Our Cakes, Bakes & Buns
         are made using quality, local produces so we in turn can support other small producers and growers.
       </p>
       <br>
@@ -35,26 +36,30 @@
         cake??
       </p>
       <br>
-      <h4>What we offer?</h4>
+      <h4>What we do</h4>
       <p>
         We offer a Custom Cakes, desserts, tray bakes and treats for any occasion or celebration, You can order
-        these via Email on <a class="color6" href="mailto:hello@krumbbakery.com">hello@krumbbakery.com</a>
+        these via Email on <a class="color1" href="mailto:hello@krumbbakery.com">hello@krumbbakery.com</a>
       </p>
 
-      <h4 class="color6">To contact us or place an order via Email - <a class="color6"
+      <h4 class="color1 pb-4">To contact us or place an order via Email - <a class="color1"
           href="mailto:hello@krumbbakery.com">Click Here</a></h4>
     </div>
   </div>
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+  <div class="row m-0 p-0 py-4">
+    <div class="col-10 offset-1">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
         {% for gal in gallery %}
         <div class="col pb-5">
-            <div class="card bg6">
-                <img src="{{ MEDIA_URL }}{{ gal.image }}" class="card-img-top" alt="{{ gal.name }}">
-               
-            </div>
+          <div class="card bg6">
+            <img src="{{ MEDIA_URL }}{{ gal.image }}" class="card-img-top" alt="{{ gal.name }}">
+
+          </div>
         </div>
         {% endfor %}
+      </div>
     </div>
+  </div>
 </div>
 </div>
 <!-- <div class="row">

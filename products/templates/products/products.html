@@ -5,31 +5,32 @@
 {% block content %}
 <div class="w-100 ">
     <div class="row m-0 p-0">
-        <div class="col-8 offset-2 color6 text-sm-center">
+        <div class="col-8 offset-2 color1 text-sm-center">
             <div class="">
-                <h1 class=" text-sm-center display-4 color6">Online Orders are coming soon!</h1>
-                <h3 class=" text-center color6">To place an order via Email <a class="color6"
+                <h1 class=" text-sm-center display-4 color1">Online Orders are coming soon!</h1>
+                <h3 class=" text-center color1">To place an order via Email <a class="color1"
                         href="mailto:hello@krumbbakery.com">Click Here</a></h3>
             </div>
         </div>
     </div>
 </div>
 <div class="row m-0 p-0">
-    <div class="col-8 offset-2 color6 text-sm-center">
+    <div class="col-8 offset-2 color1 text-sm-center">
         <h5 class="display-6 pt-4 pb-4">Product Gallery</h5>
     </div>
-
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-        {% for gal in gallery %}
-        <div class="col pb-5">
-            <div class="card bg6">
-                <img src="{{ MEDIA_URL }}{{ gal.image }}" class="card-img-top" alt="{{ gal.name }}">
-                <div class="card-body">
-                    <p class="card-text color1 text-center fs-6">{{ gal.name }}</p>
+    <div class="col-10 offset-1">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+            {% for gal in gallery %}
+            <div class="col pb-5">
+                <div class="card bg6">
+                    <img src="{{ MEDIA_URL }}{{ gal.image }}" class="card-img-top" alt="{{ gal.name }}">
+                    <div class="card-body">
+                        <p class="card-text color1 text-center fs-6">{{ gal.name }}</p>
+                    </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
 
