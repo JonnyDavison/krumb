@@ -49,22 +49,33 @@
     <div class="container-fluid">
       <a class="navbar-brand navbrand color4" href="{% url 'index' %}"><img class="nav-logo"
           src="{{ MEDIA_URL }}klogo.svg" alt="Krumb Logo"></a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <!-- display none set  -->
           <li class="nav-item">
             <a class="nav-link color6" href="{% url 'index' %}">Home</a>
           </li>
           <li class="nav-item">
+          <!-- display none set  -->
             <a class="nav-link color6 d-none" href="{% url 'about' %}">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link color6" href="{% url 'products' %}">Order Online</a>
           </li>
+
+          <li class="nav-item"><a href="https://www.facebook.com/profile.php?id=61560686905034" target="_blank"
+              class="color6 nav-link pl-0" rel="nofollow color6 noopener">Facebook <i
+                class="fa fa-facebook fa-lg color6"></i></a>
+          </li>
+
+          <li class="nav-item"><a href="https://www.instagram.com/krumb_bakery" target="_blank" class="color6 nav-link"
+              rel="nofollow noopener">Instagram <i class="fa fa-instagram fa-lg color6"></i></a>
+          </li>
+          <!-- display none set  -->
           <li class="nav-item dropdown d-none">
             <a class="nav-link dropdown-toggle color6" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
@@ -81,7 +92,8 @@
                 class="fa-solid ms-1 fa-magnifying-glass"></i></a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
+          <!-- display none set  -->
+        <form class="d-none" role="search">
           <input class="form-control me-2 color4 bg3" type="search" placeholder="Search" aria-label="Search">
           <button class="btn color6" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
@@ -90,6 +102,51 @@
   </nav>
   {% block content %}
   {% endblock %}
+
+  <footer class="footer pt-1">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-5 ">
+          <h5 class="color6"><i class="fa-regular fa-copyright color6"></i> Krumb Bakery | 2024</h5>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled color6">
+                <li><a class="color6" href="{% url 'products' %}">Order Online</a></li>
+
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled">
+              </ul>
+            </div>
+          </div>
+          <ul class="nav">
+            <li class="nav-item"><a href="https://www.facebook.com/profile.php?id=61560686905034" target="_blank"
+                class="color6 nav-link pl-0" rel="nofollow noopener"><i class="fa fa-facebook fa-lg color6"></i></a></li>
+
+            <li class="nav-item"><a href="https://www.instagram.com/krumb_bakery" target="_blank" class="color6 nav-link"
+                rel="nofollow noopener"><i class="fa fa-instagram fa-lg color6 ps-3"></i></a></li>
+
+                <li class="nav-item"><a class="color6"
+                  href="mailto:hello@krumbbakery.com"><i class="fa-regular fa-envelope fa-lg color6 ps-3"></i></a>
+                </li>
+
+                
+          </ul>
+          <br>
+        </div>
+        <div class="col-md-2">
+          <!-- <h5 class="text-md-right">Sign up to our newsletter</h5> -->
+
+        </div>
+        <div class="col-md-5">
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </footer>
+
 
 </body>
 
